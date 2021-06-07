@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class = "head"><h1>Guessing Game</h1></div>
+        <div class="input"> 
+            <input type="number" id="input" placeholder=" Your Guess" min="1" max="100">
+        </div>
+        <div class="buttons">
+            <button id = let onclick = "Condition()">Game Rules</button>
+          <div class="click"> <button id = ready onclick = "game()">Start</button>
+            <button id = go onclick = "reload()">Play Again</button></div> 
+        </div>
+        <div class="rules"></div>
+        <div class="result">Lets Start</div>
+        <div class="history"></div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
