@@ -28,7 +28,7 @@ result = "Lets start to choose a number";
 resultdiv.innerHTML = `<h4>${result}</h4>`;
 
 }
- if (chances && !win){
+else if (chances && !win){
 
     let guess = userguess.value;
     if (guess == randomNumber){
@@ -39,7 +39,7 @@ resultdiv.innerHTML = `<h4>${result}</h4>`;
         else if (guess < randomNumber){
 
             if (chances==1){
-        result = `YOU LOSE A GAME! </br> The Exact Value is ${randomNumber}`
+        result = `YOU LOSE YOUR GAME! </br> The Exact Value is ${randomNumber}`
             }else {
             result = "Your estimated value is too low";
         }
@@ -55,7 +55,7 @@ resultdiv.innerHTML = `<h4>${result}</h4>`;
 }
 chances--;
 
-historydiv.innerHTML += `<h4>you guesssed ${guess}</h4>`;
+historydiv.innerHTML += `<h4> You Guessed ${guess} </h4>`;
 
 return resultdiv.innerHTML = `<h4>${result}</h4>`;
 
@@ -64,5 +64,6 @@ return resultdiv.innerHTML = `<h4>${result}</h4>`;
 
 
 function reload() {
-    location.reload();
+    if (!chances || win){
+    location.reload();}
 }
