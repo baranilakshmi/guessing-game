@@ -39,7 +39,7 @@ else if (chances && !win){
         else if (guess < randomNumber){
 
             if (chances==1){
-        result = `YOU LOSE YOUR GAME! </br> The Exact Value is ${randomNumber}`
+        result = `YOU LOST YOUR GAME! </br> The Exact Value is ${randomNumber}`
             }else {
             result = "Your estimated value is too low";
         }
